@@ -1,0 +1,57 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    margin: 15px 0;
+    align-self: center;
+
+    .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        label {
+            width: 100%;
+            padding-bottom: 7px;
+            margin-top: 15px;
+            border-bottom: 1px solid grey;
+
+            input {
+                width: 350px;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::file-selector-button {
+                    background-color: rgb(83, 83, 216);
+                    border: none;
+                    color: white;
+                    padding: 16px 32px;
+                    text-decoration: none;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .buttons {
+            margin-top: 15px;
+            align-self: flex-end;
+            background-color:rgb(83, 83, 216);
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+}
